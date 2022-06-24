@@ -1,0 +1,282 @@
+<!--
+    Alumno: Alvarez Carranza Alejandro Cruz
+    NOTA: CABE RECALCAR QUE EN ESTA PAGINA SE AÑADIERON PARTES DE BOOTSTRAP A PETICION DEL
+    USUARIO AL QUE SE LE ENTREGARIA ESTA PAGINA WEB, DADO QUE SERA PUESTA EN LINEA PARA SU USO FORMAL,
+    LAS IMAGENES ENSEÑADAS EN ESTA PAGINA NO SERAN LAS FINALES, SOLAMENTE EL DISEÑO QUEDARÁ DE ESTA FORMA
+
+    CON EL FIN DE CUMPLIR CON LAS PETICIONES DEL MAESTRO SE AÑADIO APARTADO CSS EN LUGAR DE USAR BOOTSTRAP
+    COMPLETAMENTE, ADEMAS SE AÑADIERON ALGUNAS FUNCIONES CON JAVASCRIPT PARA PODER REALIZAR EL SCROLL AL 
+    PRESIONAR ALGUNA OPCION EN EL MENU DE NAVEGACION
+
+    PARA ELLO ACONSEJO VISUALIZAR SOLAMENTE LOS ARCHIVOS:
+        ->estilos.css
+        ->main.js
+        ->scroll.js
+    el resto de archivos son de bootstrap y un complemento para tener particulas animadas en el fondo
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gorilla Absolute</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/glider.min.css">    
+        <link rel="stylesheet" href="css/estilos.css">  
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!-- Fondo Logo Con Animación Particulas-->
+        <div id="particles-js"></div>
+        <div class="contenido-header">
+            <div class="fondo" id="fondo"></div>
+        </div>
+    
+    <div class="todo">
+        <!--Menu de Navegación-->
+        <nav class="menu">
+            <a href="#"class="seccion1">¿Quiénes Somos?</a>
+            <a href="#"class="seccion2">¿Qué Hacemos?</a>
+            <a href="#"class="seccion3">¿Dónde Encontrarnos?</a>
+        </nav>
+
+        <main class="container">
+            <!--Apartado Quienes Somos-->
+            <div id="primero" class="row nosotros justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="subtitulo"><span>¿Quiénes Somos?</span></h2>
+                        <h3 class="titulo">Es Tiempo de Evolucionar</h3>
+                        <p>
+                            Somos una empresa 100% chetumaleña, dedica a brindar servicios informáticos de calidad y honestidad.
+                            Nuestro principal objetivo es dotar de sistemas, tecnologías y servicios informáticos a todas aquellas empresas que deseen mejorar sus procesos y/o servicios.
+
+                        </p>
+                        <a href="https://www.facebook.com/GorillaAbsolute/about" class="enlace">Mira Mas</a>
+                </div>
+            </div>
+            <!--Apartado Que hacemos-->
+            <div id="segundo" class="row productos">
+                <article class="col-12 text-center">
+                    <h2 class="subtitulo"><span>¿Qué Hacemos?</span></h2>
+                    <p class="titulo">Nuestros Productos</p>
+                    <p>En nuestra tienda física y también virtual tenemos un amplio surtido de productos tecnológicos y gadgets que podrán interesarte, te invitamos que pases un momento para conocerlos.</p>
+                    <p style="font-size: medium; font-family:'Courier New', Courier, monospace;font-weight: bold;">Nota: Los productos que veras disponibles en nuestra tienda han pasado por nuestras duras pruebas de funcionamiento, esto con el fin de brindarte productos que realmente cumplan con lo que ofrecen. así que puedes comprar con total confianza y certeza que funcionaran.</p>
+                </article>
+
+                <div class="col-12">
+                    <div class="row justify-content-center">                        
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="imagenes/productos/producto1.jpg" class="img-fluid"alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto" style="text-align: center;">Dispositivo <br> Carga Inalámbrica</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="imagenes/productos/producto2.jpg" class="img-fluid"alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto" style="text-align: center;">Cable Cargador <br> Iphone</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="imagenes/productos/producto3.jpg" class="img-fluid"alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto" style="text-align: center;">Mouse Inalámbrico <br> Recargable</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="imagenes/productos/producto4.jpg" class="img-fluid"alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto" style="text-align: center;">Cable Cargador <br> V8</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+
+                        <button class="d-block btn-productos" onclick="location.href='https://www.facebook.com/GorillaAbsolute/shop/?ref_code=search_hcm_cta&ref_surface=global_search'">Todos los Productos</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!--Separador Estetico-->
+        <div class="separador text-center text-white">
+            <p><q>El Gran Motor del Cambio es la Tecnología</q><cite>-Alvin Toffler</cite>
+        </div>
+
+        <!--Algunos de Nuestros Servicios-->
+        <div class="container">
+            <div class="row servicios justify-content-around">
+                <article class="col-10 col-sm-5">
+                    <figure class="text-center">
+                        <img class="iconos" src="imagenes/iconos/icono2.ico" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2">Desarrollo e Implementación de Sistemas, Aplicaciones Móviles y Páginas Web.</strong>
+                                <div class="w-100">
+                                    Recuerda que entramos en una nueva era de tecnologías, es tiempo que tú o tu negocio también formen parte de ella. 
+                                </div>
+
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-10 col-sm-5">
+                    <figure class="text-center">
+                        <img class="iconos" src="imagenes/iconos/icono1.ico" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2">Reparación y diagnóstico de Equipos de Cómputo y Celulares Inteligentes</strong>
+                                <div class="w-100">
+                                    Si tu equipo presenta problemas, acude a nosotros, haremos el trabajo difícil mientras tú te relajas.
+                                </div>
+
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-10 col-sm-5">
+                    <figure class="text-center">
+                        <img class="iconos" src="imagenes/iconos/icono3.ico" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2">Consultas y Asesorías de Proyectos y Sistemas.</strong>
+                                <div class="w-100">
+                                    Si tienes dudas sobre un proyecto que quieras realizar, agenda con nosotros, podemos asesorarte y orientarte.
+                                </div>
+
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-10 col-sm-5">
+                    <figure class="text-center">
+                        <img class="iconos" src="imagenes/iconos/icono4.ico" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2">Ventas de Equipos Ensamblados (Profesionales y/o Gamers)</strong>
+                                <div class="w-100">
+                                    Quieres armar una computadora acorde a tus necesidades o una computadora gamer pero no sabes cómo iniciar, nosotros te decimos cómo.! 
+                                </div>
+
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+            </div>
+        </div>
+        
+        <!-- Galeria de Imagenes A Petición del Cliente *Las imagenes no son las finales*-->
+        <div class="carousel">
+            <div class="carousel__contenedor">
+                
+                
+                <div class="carousel__lista">
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria1.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria3.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria4.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria5.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria6.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria7.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria8.jpg" alt="">
+                    </div>
+                    <div class="carousel__elemento"><img src="imagenes/galeria/galeria9.jpg" alt="">
+                    </div>
+                </div>
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+
+        <div class="container">
+            <div id="primero" class="row nosotros justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="subtitulo"><span>Nuestro Trabajo</span></h2>
+                        <h3 class="titulo socios" style="margin-bottom:0px ;">Empresas Evolucionando</h3>
+                        <p>
+                            -No te quedes atrás y da el paso a la siguiente era-
+                        </p>
+                </div>
+            </div>
+            <div class="row servicios justify-content-center">
+                        <img class="empresas" src="imagenes/socios/torito.png" alt="" >
+                        <img class="empresas" src="imagenes/socios/logoITresNegro.png" alt="" >
+                        <img class="empresas" src="imagenes/socios/PuntoDelDeporteMZ.png" alt="" >
+            </div>
+        </div>
+
+        <!--Apartado Contacto de la empresa-->
+        <div id="tercero" class="container-fluid">
+            <section class="contacto row justify-content-center">
+                <div class="col-12 col-md-9 text-center">
+                    <h2 class="subtitulo"><span>¿Dónde Encontrarnos?</span></h2>
+                    <p><b>Actualmente tenemos nuestras oficinas en la ciudad de Chetumal, Quintana Roo.</b></p> 
+                     <p><b>Dirección:</b> Colonia Jardines Calle Azucenas entre Aaron Merino y Framboyanes #262 </p>
+                </div>
+                <iframe class="col-12 col-md-9" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1337.6305756727547!2d-88.32894256055232!3d18.511242806008465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3982baf5f102b47d!2sGorilla%20Absolute!5e0!3m2!1ses-419!2smx!4v1595559489571!5m2!1ses-419!2smx" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="w-100 mb-4"></div>
+                <div>
+                    <p class="border-bottom border-top" style="font-family: 'Orbitron';text-align: center;">
+                        <b>Correo de Contacto:</b> 
+                        <br>
+                        GorillaAbsolute@gmail.com
+                        <br>
+                        <br>
+                        <b>Número de Contacto:</b> 
+                        <br>
+                        +52 983 116 9648
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!-- Pie de Pagina-->
+        <footer class="row justify-content-center redes-sociales" style="color: white;text-align: center; font-family: 'Times New Roman', Times, serif;">
+            <div class="col-auto"> 
+                <div class="row justify-content-center">
+                    <a href="https://web.facebook.com/GorillaAbsolute"><img src="imagenes/iconos/faceW.png" alt=""></a>
+                    <a href="https://www.instagram.com/gorillaabsolutechetumal/"><img src="imagenes/iconos/instaW.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCXAprigfoSb3v7gFp1XhugQ"><img src="imagenes/iconos/youtubeW2.png" alt=""></a> 
+                </div>
+                &copy; Gorilla Absolute 2022 <br>
+                Todos los Derechos Reservados
+            </div>    
+        </footer>
+        
+</div>
+    <!--JS de PARTICULAS Y SCROLL DEL MENU DE NAVEGACIÓN-->
+        <script src="js/particles.min.js"></script>
+        <script src="js/carParticulas.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/scroll.js"></script>   
+        <script src="js/glider.min.js"></script>
+        
+    </body>
+</html>
